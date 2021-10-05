@@ -1,4 +1,4 @@
-FROM debian:11 as build
+FROM fedora:34
 
 # install ghc and llvm
-RUN apt-get -y update && apt-get install -y ghc=8.8.4-2 llvm=1:11.0-51+nmu5
+RUN dnf install -y ghc-8.8.4 llvm-12.0.0
